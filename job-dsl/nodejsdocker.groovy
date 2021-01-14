@@ -16,7 +16,7 @@ job('NodeJS Docker example') {
         dockerBuildAndPublish {
             repositoryName('bmaz2021/second')
             tag('${GIT_REVISION,length=9}')
-            registryCredentials('bmaz2021')
+            registryCredentials('dockerhub')
             forcePull(false)
             forceTag(false)
             createFingerprints(false)
